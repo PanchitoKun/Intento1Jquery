@@ -7,13 +7,23 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 
-   
+   <!--CND Jquery-->
+   <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+   <!--Data tables -->
     <link rel="stylesheet" href="https://cdn.datatables.net/2.0.7/css/dataTables.dataTables.css" />
+
   
 <script src="https://cdn.datatables.net/2.0.7/js/dataTables.js"></script>
+<!--Inicializando tablas de datos
+¡Eso es casi todo! Tenemos la tabla HTML que queremos mejorar y tenemos todo el software y los estilos que necesitamos. Todo lo que se necesita ahora es decirle a DataTables que realmente haga su magia en la mesa. Esto se hace con unas pocas líneas de Javascript:-->
+<script>
+    $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
 </head>
 <body><script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
-    <table class="table">
+    <table id="myTable" class="table table-bordered">
         <thead>
           <tr>
             <!--esto es la cabezera-->
